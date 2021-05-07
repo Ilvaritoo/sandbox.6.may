@@ -1,0 +1,23 @@
+body{
+    background-color: antiquewhite;
+}
+
+[data-test]{
+    color: red;
+    background-color: rgb(132, 224, 70);
+}
+
+[data-test]:hover::before{
+    content: attr(data-test);
+}
+
+.one{
+    background-color: aquamarine;
+    /* margin: clamp(0.5rem, 3rem, 7rem); */
+    width: 70%;
+    /* width: clamp(10%, 30vw, 50%); */
+}
+
+h1{
+    font-size:clamp(2rem, 5vw, 3rem);
+}
